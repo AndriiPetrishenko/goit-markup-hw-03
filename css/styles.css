@@ -13,6 +13,7 @@ font-family: 'Roboto', sans-serif; */
   --logo-right: #000000;
   --accent-color: #2196f3;
   --frame-color: #eeeeee;
+  --border-bottom-color: #ececec;
 
   --logo-font: 'Raleway', sans-serif;
   --main-font: 'Roboto', sans-serif;
@@ -74,7 +75,8 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
 
 .button {
@@ -124,7 +126,16 @@ img {
   color: var(--logo-right);
 }
 
+.hero-section {
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--bg-color-dark);
+}
+
 .title-heroe {
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -132,7 +143,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--title-text-color-light);
-  background-color: var(--bg-color-dark);
 }
 
 .btn-heroe {
@@ -172,6 +182,9 @@ img {
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color-dark);
+}
+
+.grey-bg {
   background-color: var(--bg-color-light);
 }
 
@@ -183,7 +196,7 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color-dark);
-  background-color: #fff;
+  background-color: var(--bg-color-main);
 }
 
 .text-card {
@@ -191,7 +204,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--bg-color-main);
 }
 
 /* Галерея портфолио */
@@ -214,25 +227,7 @@ img {
 }
 
 .page-header {
-  background-color: yellow;
-}
-
-.footer {
-  padding-top: 60px;
-  /* display: flex;
-  flex-direction: row; */
-}
-
-/* Позиционирование */
-.container {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: solid 1px;
-}
-
-.page-footer {
-  background-color: var(--bg-color-dark);
+  background-color: var(--bg-color-main);
 }
 
 .header-pos {
@@ -243,8 +238,7 @@ img {
 }
 
 .header-pos-portfolio {
-  border-bottom: solid 1px blue;
-  padding-bottom: 94px; /*внешний отступ до кнопок фильтра на портфолио */
+  border-bottom: solid 1px var(--border-bottom-color);
 }
 
 .main-nav {
@@ -259,6 +253,10 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.nav-item:first-child {
+  padding-left: 93px;
+}
+
 .header-contacts {
   display: flex;
   flex-direction: row;
@@ -274,14 +272,10 @@ img {
   display: flex;
   margin-bottom: 94px;
 }
-/* .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
 
 .values-list {
   display: flex;
-  /* margin-bottom: 94px; */
+  padding-top: 94px;
 }
 
 .values-item {
@@ -292,6 +286,8 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-list {
@@ -299,19 +295,27 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   background-color: var(--bg-color-light);
 }
 
-/* .team-item {
-  padding-right: 15px;
-  padding-left: 15px;
-} */
+.footer {
+  padding-top: 60px;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .footer-contacts {
   padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--bg-color-dark);
 }
 
 .galery-list {
@@ -323,17 +327,20 @@ img {
 }
 
 .galery-item {
-  border: 1px solid var(--frame-color);
   margin-right: 15px;
   margin-top: 15px;
 }
 
+.frame-portfolio-card {
+  border-left: 1px solid var(--frame-color);
+  border-right: 1px solid var(--frame-color);
+  border-bottom: 1px solid var(--frame-color);
+}
+
 .galery-item:nth-child(-n + 3) {
-  background-color: orange;
   margin-top: 0;
 }
 
 .galery-item:nth-child(3n + 3) {
-  background-color: tomato;
   margin-right: 0;
 }
