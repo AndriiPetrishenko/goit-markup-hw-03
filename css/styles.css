@@ -103,6 +103,8 @@ img {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color-light);
+  border-color: var(--accent-color);
+  outline-style: none;
 }
 
 .link:hover,
@@ -229,6 +231,7 @@ img {
 
 .page-header {
   background-color: var(--bg-color-main);
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 .header-pos {
@@ -236,10 +239,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-pos-portfolio {
-  border-bottom: solid 1px var(--border-bottom-color);
 }
 
 .main-nav {
@@ -274,6 +273,10 @@ img {
   margin-bottom: 94px;
 }
 
+.page-heroe {
+  background-color: var(--bg-color-dark);
+}
+
 .values-list {
   display: flex;
   padding-top: 94px;
@@ -291,6 +294,10 @@ img {
   padding-right: 15px;
 }
 
+.page-team {
+  background-color: var(--bg-color-light);
+}
+
 .team-list {
   display: flex;
   flex-direction: row;
@@ -304,6 +311,10 @@ img {
 
 .footer {
   padding-top: 60px;
+}
+
+.page-footer {
+  background-color: var(--bg-color-dark);
 }
 
 .container {
